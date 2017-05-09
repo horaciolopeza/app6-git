@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Sexta Aplicación</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app6.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/atlixco2.jpg','imagenes/atlixco2b.jpg', 'imagenes/consecuencias3sus.jpg','imagenes/consecuencias3.JPG')">
+
+  <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Batalla de Puebla</h1>
+    </div>
+    <br>
+    <div align="center">
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/4_de_mayo.jpg" alt="4 de Mayo" title="4 de Mayo" id="wows1_0"/></li>
+		<li><img src="data1/images/5_de_mayo.jpg" alt="5 de Mayo" title="5 de Mayo" id="wows1_1"/></li>
+		<li><img src="data1/images/atlixco.jpg" alt="Atlixco" title="Atlixco" id="wows1_2"/></li>
+		<li><img src="data1/images/atlixquenses.jpg" alt="Atlixquenses" title="Atlixquenses" id="wows1_3"/></li>
+		<li><img src="data1/images/derrota_de_francia.jpg" alt="Derrota de Francia" title="Derrota de Francia" id="wows1_4"/></li>
+		<li><img src="data1/images/ejercito_frances.jpg" alt="Ejercito Frances" title="Ejercito Frances" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/llegada_de_francia.jpg" alt="bootstrap slider" title="Llegada de Francia" id="wows1_6"/></a></li>
+		<li><img src="data1/images/retirada_de_los_franceses.jpg" alt="Retirada de los Franceses" title="Retirada de los Franceses" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="4 de Mayo"><span><img src="data1/tooltips/4_de_mayo.jpg" alt="4 de Mayo"/>1</span></a>
+		<a href="#" title="5 de Mayo"><span><img src="data1/tooltips/5_de_mayo.jpg" alt="5 de Mayo"/>2</span></a>
+		<a href="#" title="Atlixco"><span><img src="data1/tooltips/atlixco.jpg" alt="Atlixco"/>3</span></a>
+		<a href="#" title="Atlixquenses"><span><img src="data1/tooltips/atlixquenses.jpg" alt="Atlixquenses"/>4</span></a>
+		<a href="#" title="Derrota de Francia"><span><img src="data1/tooltips/derrota_de_francia.jpg" alt="Derrota de Francia"/>5</span></a>
+		<a href="#" title="Ejercito Frances"><span><img src="data1/tooltips/ejercito_frances.jpg" alt="Ejercito Frances"/>6</span></a>
+		<a href="#" title="Llegada de Francia"><span><img src="data1/tooltips/llegada_de_francia.jpg" alt="Llegada de Francia"/>7</span></a>
+		<a href="#" title="Retirada de los Franceses"><span><img src="data1/tooltips/retirada_de_los_franceses.jpg" alt="Retirada de los Franceses"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-fisrt-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Antecedentes</h2>
+         <p>Qué se esconde detras de la Batalla de Puebla</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Batalla del 4 de Mayo</h2>
+         <p>La batalla que tomó lugar en el hoy, Atlixco</p>
+   	   </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Batalla del 5 de Mayo</h2>
+         <p>Una de las batallas más conmemoradas en México</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Repercusiones</h2>
+         <p>¿Las consecuencias tras la Batalla de Puebla?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Concientización</h2>
+         <p>El verdadero significado de la Batalla</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Personajes Históricos de la Batalla</h2>
+         <p>El perfil de los personajes principales participes en la Batalla de Puebla</p>
+       </a>
+     </li>
+     </ul>
+    </div>
+    <br>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+       <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <div>
+       <h4>Aplicación Seis</h4>
+       <h4>Horacio Iván López Alonso</h4>
+     </div>
+    </div>
+   </div>
+   
+    
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Antecedentes</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México para reclamar sus derechos como acreedores por una deuda que ascendía a alrededor de 80 millones de pesos, de los que aproximadamente 69 millones corresponderían a Inglaterra, 9 millones a España y 2 millones a Francia.
+
+El contingente europeo estaba conformado como sigue:
+
+- España: 6000 hombres al mando del General Juan Prim.
+- Francia: 3000 hombres dirigidos por el Contraalmirante Edmond Jurien de la Gravière.
+- Reino Unido: 700 marines bajo el comando del Comodoro Dunlop.</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Ejercitos Extranjeros</h1>
+            <div>
+               <img src="imagenes/antecedentes1.jpg" width="80%" height="80%">
+            </div>
+          </div>
+         </div>
+         <p align="left">El 5 de marzo, cuando aún se realizaban las negociaciones en Orizaba, llegó a Veracruz un contingente militar francés bajo el mando de Charles Ferdinand Latrille, conde de Lorencez, quien relevó en el mando a Jurien de la Gravière y se dirigió a Tehuacán. También llegó el general conservador Juan Nepomuceno Almonte, quien de inmediato se proclamó "jefe supremo de la nación" y empezó a reunir a las tropas conservadoras, remanentes de la Guerra de Reforma, para apoyar a los franceses.</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Ejercito Francés</h1>
+            <div>
+               <img src="imagenes/antecedentes2.jpg" width="75%" height="75%">
+            </div>
+          </div>
+         </div>
+         <p align="left">En abril de 1862 la alianza tripartita se rompió debido a que España e Inglaterra se dieron cuenta de que Francia tenía un interés soterrado, de tipo geopolítico, bajo el reclamo económico: derrocar al gobierno republicano de México para establecer una monarquía favorable a su política colonial, con miras a contrarrestar el creciente poderío de Estados Unidos.</p>
+         <br>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content" align="center">
+       <div style="width:25%;">
+        <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+         <li class="ui-first-child ui-last-child">
+          <a href="http://2aintervencionfrancesa.blogspot.mx/2013/11/causas-y-consecuencias-de-la-segunda.html" data-role="button">
+           <h2>Para saber más</h2>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <div align="center">
+         <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        <h4>Aplicación Seis</h4>
+      </div>
+    </div>
+
+
+
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Batalla del 4 de Mayo</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <h2>Batalla de Atlixco</h2>
+      <p align="left">La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.</p>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/atlixco2.jpg',1)"><img src="imagenes/atlixco1.jpg" width="80%" height="80%" id="Image22"></a> </div>
+      <!-- imagen de sustitucion -->
+      <p align="left">Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</p>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/atlixco2b.jpg',1)"><img src="imagenes/atlixco1b.jpg" width="80%" height="80%" id="Image23"></a> </div>
+      <!-- imagen de sustitucion -->
+    </div>
+   </div>
+   
+      <div data-role="main" class="ui-content" align="center">
+       <div style="width:25%;">
+        <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+         <li class="ui-first-child ui-last-child">
+          <a href="http://www.capitalpuebla.com.mx/puebla/batalla-por-la-supervivencia-en-atlixco-la-sombra-tras-la-gloria-del-5-de-mayo" data-role="button">
+           <h2>Para saber más</h2>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      
+    <div data-role="footer" data-theme="b" data-position="fixed">
+      <div align="center">
+         <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <h4>Aplicación Seis</h4>
+    </div>
+   </div>
+   
+   
+   
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Batalla del 5 de Mayo</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">Asegurado el paso de Acultzingo, el 2 de mayo de 1862 la columna principal del ejército expedicionario francés salió de San Agustín del Palmar, en Veracruz, para cruzar la Sierra Madre Oriental y dirigirse hacia Puebla, paso obligado para llegar a la capital del país y que era además uno de los bastiones del Partido Conservador, donde esperaban ser recibidos "con una lluvia de rosas", como le aseguró Saligny a Napoleón III en una carta. El 3 de mayo por la noche, el general Zaragoza arribó a Puebla, dejando en su retaguardia una brigada de caballería para hostigar a los invasores.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Maqueta de La Batalla</h1>
+         <div>
+            <img src="imagenes/puebla1.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">Zaragoza estableció su cuartel a unos cuantos metros de la línea de batalla, donde estableció el plan para la defensa de la plaza (ver tabla superior), que consistió en concentrar los pertrechos en el sur y oriente de la ciudad, esperando evitar que los franceses alcanzaran al área urbana de Puebla.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Área de combate en los Fuertes de Loreto</h1>
+         <div>
+            <img src="imagenes/puebla2.png" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">A las 9:15 de la mañana del 5 de mayo, los franceses aparecieron en el horizonte, avanzando desde la cercana Hacienda de Rementería, cruzando fuego con las guerrillas de caballería que se batían en retirada y que no se replegaron hasta que las líneas francesas estuvieron formadas y listas para avanzar. La batalla se inició en forma a las 11:15 de la mañana, anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad. En ese momento se dio una maniobra sorpresiva: la columna francesa, que venía avanzando en orden de oriente a poniente, se dividió en dos: la primera, compuesta por aproximadamente 4000 hombres y protegida con su artillería, dio un violento viraje hacia la derecha y se dirigió hacia los fuertes; mientras que la segunda columna, compuesta por el resto de la infantería, quedó como reserva.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Batalla de Puebla</h1>
+         <div>
+            <img src="imagenes/puebla3.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+         
+       <div data-role="content" align="center">
+       <div>
+         <p align="left">Cuando la segunda columna llegó al Fuerte de Guadalupe protegida por una línea de tiradores, Porfirio Díaz acudió en auxilio de los Rifleros de San Luis Potosí, que estaban a punto de ser rodeados. Movió en columna al Batallón Guerrero, a las órdenes del coronel Jiménez, y le ganó el terreno a los franceses. Para apoyar envió al resto de las tropas de Oaxaca, con los coroneles Espinoza y Loaeza a la cabeza, con lo que se logró expulsar al enemigo de las cercanías. El éxito alentó a Díaz, que destacó al Batallón Morelos con dos piezas de artillería a la izquierda, mientras por la derecha los Rifleros de San Luis Potosí se reponían de la pelea, antecedidos por una carga de los Lanceros de Oaxaca, trabándose un combate cuerpo a cuerpo que hizo retroceder a los atacantes.</p>
+         <p align="left">En aquel momento, luego de ser repelidos por última vez, las efectivos franceses empezaron a huir, completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Victoria de los Mexicanos</h1>
+         <div>
+            <img src="imagenes/puebla4.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+     </div>
+    </div>
+    
+      <div data-role="main" class="ui-content" align="center">
+       <div style="width:25%;">
+        <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+         <li class="ui-first-child ui-last-child">
+          <a href="http://www.ngenespanol.com/el-mundo/culturas/17/05/5/datos-importantes-batalla-de-puebla/" data-role="button">
+           <h2>Para saber más</h2>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <div align="center">
+         <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        <h4>Aplicación Seis</h4>
+      </div>
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Repercusiones</h1>
+      </div>
+      
+     <div data-role="content" align="center">
+       <div>
+         <p align="left">Ante la incertidumbre, el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos y algunos centenares de milicianos pobremente armados.</p>
+         <p align="left">El saldo final de la batalla fue de 476 muertos y 345 heridos del lado francés, así como 83 muertos, cerca de 131 heridos y 12 desaparecidos para el Ejército de Oriente.</p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Retirada del ejercito francés</h1>
+            <div>
+               <img src="imagenes/consecuencias1.jpg" width="70%" height="70%">
+            </div>
+          </div>
+         </div>
+         
+         <p align="left">El 5 de septiembre de 1862, todavía acuartelado en Puebla, el general Zaragoza contrajo tifo y falleció tres días después. Lo sustituyó en el mando del Ejército de Oriente el general Jesús González Ortega, quien se encargaría de la defensa de la ciudad ya que se esperaba el regreso de los franceses, reagrupados y con refuerzos, lo cual sucedió en marzo del siguiente año.</p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Telegramas de Zaragoza</h1>
+            <div>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/consecuencias3.JPG',1)"><img src="imagenes/consecuencias2.jpg" width="70%" height="70%" id="Image24"></a> </div>
+          </div>
+         </div>
+         
+         <p align="left">Cuando en Francia se supo la derrota del ejército francés, originó dolor, histeria y llanto, más aún cuando llegaron las historias de que los indígenas zacapoaxtlas (que en realidad se trataba del sexto Batallón de Guardia Nacional del Estado de Puebla) habían atacado con machetes, arma desconocida en Europa, y se comían los cadáveres.</p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Europa en conmosión</h1>
+            <div>
+               <img src="imagenes/consecuencias4.jpg" width="70%" height="70%">
+            </div>
+          </div>
+         </div>
+         
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content" align="center">
+       <div style="width:25%;">
+        <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+         <li class="ui-first-child ui-last-child">
+          <a href="http://2aintervencionfrancesa.blogspot.mx/2013/11/causas-y-consecuencias-de-la-segunda.html" data-role="button">
+           <h2>Para saber más</h2>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <div align="center">
+         <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        <h4>Aplicación Seis</h4>
+      </div>
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Concientización</h1>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">Con excepción del Grito de Dolores, la conmemoración de la Batalla de Puebla es la fecha más significativa del calendario cívico mexicano, al tratarse de una de las escasas victorias ante un ejército extranjero invasor. Simbólicamente, representa la consecución de una gran empresa por parte de los mexicanos, que puede conseguirse si se olvidan las divisiones y se sobreponen éstas a las carencias, como lo demuestra el hecho de que se consiguió la victoria, con valor y dedicación.</p>
+         <p align="left">El 5 de mayo es una fecha entrañable para los mexicanos; se celebra en las principales ciudades del país con desfiles y verbenas. Ese día se le toma protesta en todo el país a los jóvenes que cumplen el Servicio Militar Nacional.</p>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h2>Primer Batallón de Oaxaca</h2>
+        <p align="left">Representación simbólica de aspectos representativos de la historia mexicana a través de las banderas del primer batallón de Oaxaca.</p>
+          <div align="center">
+            <img src="imagenes/concientizacion1.jpg" width="80%" height="80%">
+          </div>
+        </div>  
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <div align="center">
+         <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        <h4>Aplicación Seis</h4>
+      </div>
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Personajes Históricos de la Batalla</h1>
+      </div>
+      
+      <div align="center">
+       <p align="left">Durante el desarrollo de La Batalla de Puebla se dieron a conocer personajes que tanto serían participes de dicho conflicto, como protagonistas del mismo. A continuación se presenta un listado con un perfil resumido de cada uno de ellos:
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Benito Juarez</h1>
+         <div>
+          <p>Benito Juárez en el principio de su vida era pobre, un sacerdote lo ayudo con la escuela. El logro convertirse en juez y tomó decisiones que lo hicieron acreedor de un exilio a laosiana. Después regresó a México y escaló a la presidencia, pimero el llego a ser regidor de Oaxaca y luego gobernador del mismo. Posteriormente asumió la presidencia  de México y tuvo participación en la batalla de Puebla. Murió el 18 de julio de 1872.</p>
+          <br>
+         </div>
+         <div align="center">
+            <img src="imagenes/beni.png" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Porfirio Díaz</h1>
+         <div>
+          <p>Porfirio Díaz era un miliar y político. Logro ser presidente de México durante los años de 1876 hasta 1911 treinta años de poder en México. Ingreso al ejército, la batalla de Puebla culminío y Benito Juárez termino siendo presidente.</p>
+          <br>
+         </div>
+         <div align="center">
+            <img src="imagenes/porfi.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Ignacio Zaragoza</h1>
+         <div>
+          <p>Ignacio Zaragoza nacido en Texas ingreso al ejército. Su vocación estaba al mando de un ejército de oriente, el cual estaba compuesto de indígenas que lograron vencer al ejército francés en la batalla de puebla. Ignacio Zaragoza murió a la edad de 33 años en la capital debido a tifoidea.</p>
+          <br>
+         </div>
+         <div align="center">
+            <img src="imagenes/igna.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Napoleón III</h1>
+         <div>
+          <p>Luis napoleón en 1873 era el presidente de la república y emperador de Francia en su juventud. Era conspirador liberal participando en los movimientos revolucionarios italianos en 1831. Tuvo un fracaso que le costó la vida además de un exilio a Inglaterra.</p>
+          <br>
+         </div>
+         <div align="center">
+            <img src="imagenes/napo.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Maximiliano de Hasburgo</h1>
+         <div>
+          <p>Maximiliano empezó siendo el segundo emperador en México nacido en Viena en 1832. Él fue enviado por Napoleón y su meta era conquistar a México para posteriormente a los estados unidos.</p>
+          <br>
+         </div>
+         <div align="center">
+            <img src="imagenes/maxi.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Marqués de Radepont</h1>
+         <div>
+          <p>Marqués de Radepont fue la persona que trajo la idea de la batalla de puebla. También era un diplomático para el imperio francés que poseía la iniciativa de Napoleón III.</p>
+          <br>
+         </div>
+         <div align="center">
+            <img src="imagenes/marqui.jpg" width="70%" height="70%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <div align="center">
+         <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        <h4>Aplicación Seis</h4>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
